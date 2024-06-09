@@ -8,7 +8,7 @@ namespace WebApplication2.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching" , "Scorching2"
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching" , "Scorching2" , "Scorching3"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
@@ -17,7 +17,7 @@ namespace WebApplication2.Controllers
         {
             _logger = logger;
         }
-
+            
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
